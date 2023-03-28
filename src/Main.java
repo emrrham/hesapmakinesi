@@ -26,9 +26,9 @@ public class Main {
 
         System.out.println("akifin götten yeme ortalaması" + sonuc);
 
-        boolean condition =  sonuc > 60;
+        boolean condition =  sonuc > 31;
 
-        String result = condition ? "You Are Pass!" : "You Didn't Pass!";
+        String result = condition ? "AKİF GEÇTİN AMA GÖTTEN YEDİN!" : "AKİF GEÇEMEDİN AMA GÖTTEN YEDİN";
 
         System.out.println(result);
 
