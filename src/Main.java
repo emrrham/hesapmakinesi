@@ -1,38 +1,41 @@
-import java.util.Scanner;
-public class Main {
+   import java.util.Scanner;
+
+    public class Main {
     public static void main(String[] args) {
-        // Değişken oluştur
-        int mat,fizik,kimya,biyoloji,beden;
-        //Scanner tanımla
-        Scanner inp = new Scanner(System.in);
-        //kullanıcıdan değer alma
-        System.out.print("Matematik notu :");
-        mat = inp.nextInt();
+     int n1,n2,select;
+     Scanner input = new Scanner(System.in);
+        System.out.println("İlk Sayı ?");
+     n1 = input.nextInt();
 
-        System.out.print("beden notu :");
-        fizik = inp.nextInt();
+        System.out.println("ikinci sayı ?");
+     n2 = input.nextInt();
+     System.out.println("1-Toplama\n2-çıkarma\n3-çarpma\n4-bölme\n5-atak");
+     System.out.print("Seçimin?");
+     select = input.nextInt();
+     System.out.println(select);
+        switch (select) {
+            case 1 :
+                System.out.println("Toplam : " +  (n1 + n2) );
 
-        System.out.print("biyoloji notu :");
-        kimya  = inp.nextInt();
+                break;
+            case 2:
+                System.out.print("Çıkarma : " + (n1 - n2));
 
-        System.out.print("kimya notu :");
-        biyoloji = inp.nextInt();
-
-        System.out.print("fizik notu :");
-        beden = inp.nextInt();
-
-        int toplam = (mat + fizik + kimya + biyoloji + beden);
-        double sonuc = toplam/6;
-
-        System.out.println("akifin götten yeme ortalaması" + sonuc);
-
-        boolean condition =  sonuc > 31;
-
-        String result = condition ? "AKİF GEÇTİN AMA GÖTTEN YEDİN!" : "AKİF GEÇEMEDİN AMA GÖTTEN YEDİN";
-
-        System.out.println(result);
-
+                break;
+            case 3:
+                System.out.println("Çarpım : " + (n1 * n2));
+                break;
+            case 4:
+                System.out.println("Bölüm : " + (n1/n2));
+               break;
+            case 5:
+                System.out.println("ATAK BAŞARAMADIN");
+                break;
+            default:
+                System.out.println("YANLIŞ GİRDİN YA ZATEN 5 TANE VAR AMK ");
+                break;
 
 
     }
-}
+    }
+    }
