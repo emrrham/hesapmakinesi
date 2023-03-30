@@ -2,28 +2,27 @@
 
     public class Main {
     public static void main(String[] args) {
-      int mat,fizik,kimya,biyoloji;
-       Scanner input = new Scanner(System.in);
-               System.out.println("Matematik notunuz : ");
-      mat = input.nextInt();
-               System.out.println("Fizik notunuz : ");
-      fizik = input.nextInt();
-               System.out.println("Kimya notunuz : ");
-      kimya = input.nextInt();
-               System.out.println("biyoloji notunuz : ");
-      biyoloji = input.nextInt();
-
-            double avarage = (mat + fizik + kimya + biyoloji)/ 4 ;
-            if (avarage<= 45){
-                System.out.println("Geçemediniz!");
-                System.out.println("Ortalamanız : " + avarage);
-
-        }else{
-                System.out.println("Tebrikler geçtin!");
-            System.out.println("Ortalamanız : " + avarage);
-        }
-
+        int sıcaklık;
+        Scanner input = new Scanner(System.in);
+                System.out.println("Sıcaklık giriniz : (°C cinsinden)");
+                sıcaklık = input.nextInt();
+        if (sıcaklık < 5){
+            System.out.println("PC oynamaya devam..");
+            
+        } else if (sıcaklık >= 5 && sıcaklık<= 25 ) {
+            if (sıcaklık<=15){System.out.println("Bahçeye git");
+            
+        }if (sıcaklık >= 10){
+                System.out.println("Pikniğe git.");
+            } else if (sıcaklık>25) {
+                System.out.println("Yüzmeye git!");
+            }else
+                System.out.println("akifi görmeye gidebilirsin.");
+                
             }
+
+
+        }
 
 
     }
