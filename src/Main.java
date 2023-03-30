@@ -2,21 +2,26 @@
 
     public class Main {
     public static void main(String[] args) {
-      String userName,password;
+      int mat,fizik,kimya,biyoloji;
+       Scanner input = new Scanner(System.in);
+               System.out.println("Matematik notunuz : ");
+      mat = input.nextInt();
+               System.out.println("Fizik notunuz : ");
+      fizik = input.nextInt();
+               System.out.println("Kimya notunuz : ");
+      kimya = input.nextInt();
+               System.out.println("biyoloji notunuz : ");
+      biyoloji = input.nextInt();
 
-      Scanner inp = new Scanner(System.in);
-      System.out.print("Gulag Kullanıcı adı giriniz : ");
-      userName = inp.nextLine();
+            double avarage = (mat + fizik + kimya + biyoloji)/ 4 ;
+            if (avarage<= 45){
+                System.out.println("Geçemediniz!");
+                System.out.println("Ortalamanız : " + avarage);
 
-      System.out.print("Gulag Şifresi Giriniz : ");
-      password = inp.nextLine();
-      if(userName.equals("emrrham") && password.equals("akif") ){
-          System.out.println("Bilgileriniz doğru! добро пожаловать солдат!!! ");
-
-      }
-else {
-    System.out.println("Bilgileriniz Yanlış  kürek mahkûmları kampına aktarılıyorsunuz...");
-      }
+        }else{
+                System.out.println("Tebrikler geçtin!");
+            System.out.println("Ortalamanız : " + avarage);
+        }
 
             }
 
